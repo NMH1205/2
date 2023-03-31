@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到XX的个人介绍网页</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="nav">
+        <ul class="left">
+            <li>计算机与通信工程学院</li>
+            <img src="img/院徽.jpg" alt="">
+        </ul>
+        <ul class="right">
+            <li>将生活塞给你的酸柠檬酿成甘甜的柠檬汽水 ~</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="lpart">
+            <div class="self" id="self_introduction">个人简介</div>
+            <div style="height: 220px;"><img src="img/1582423751011.jpg" alt=""></div>
+            <div class="text">
+                <li>====姓名： 娜沐晗====</li>
+                <li>==班级：新传1班==</li>
+                <li>=学号：2110683=</li>
+                
+            </div>
+        </div>
+
+        <div class="rpart">
+            <div>
+                <div class="title title1" id="fbook"></div>
+                <div class="contain ">
+                    <img src="img/mmexport1680260959598.jpg" alt="" style="float: left;margin: 50px;size: 65%;">
+                    <div class="summary1">
+                        <div style="font-size: 20pt;text-align: center;">
+                        《平如美棠——我俩的故事》。
+                        &nbsp;&nbsp;&nbsp;
+                        【饶平 著】
+                        </div><br><br>
+                        <div style="font-size: larger;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        毛美棠和饶平如两人1948年结婚，相守了半个世纪，可就在即将迎来他们60周年钻石婚的时候，病痛夺走了美棠的生命，之后有整整半年时间，老爷子每日是睡前醒后，都是难过，后来他一笔一画地从相识相爱到相别相离的日日夜夜都画下来，将100多幅整理成《平如美棠——我俩的故事》。
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="title title2" id="fmovie"></div>
+                <div class="contain ">
+                    <img src="img/小龙虾.jpg" alt="" style="float: left;margin: 50px;size: 100%;">
+                    <img src="img/剁椒鱼头.jpg" alt="" style="float: left;margin: 50px;size: 100%;">
+                    <img src="img/长沙臭豆腐.jpg" alt="" style="float: left;margin: 50px;size: 100%;">
+                    <div class="summary2">
+                        <div style="font-size: 20pt;text-align: center;">
+                            最爱的美食是湖南美食
+                        </div><br><br>
+                        <div style="font-size: larger;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            口味虾 毛氏红烧肉 永州血鸭 
+                            东安鸡 永州喝螺 宁远血鸭 
+                            冰糖湘莲 炒素什锦 翠竹粉蒸鱼 
+                            大边炉 洞庭金龟 发丝百叶 
+                            芙蓉鲫鱼 干蒸湘莲 红烧龟肉 
+                            椒盐兔片 金鱼戏莲 开屏柴把桂鱼 
+                            腊味合蒸 麻仁酥鸭 面包鸡排  
+                            清润防热感 马蹄白果蛋花汤  
+                            双色鱿鱼卷 五元神仙鸡 
+                            鲜鱼生菜汤 湘味方肉 青椒炒肉
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="title title3" id="ffood"></div>
+                <div class="contain ">
+                    <img src="img/Harry.jpg" alt="" style="float: left;margin: 120px 0 0 80px;">
+                    <div class="summary3">
+                        <div style="font-size: 20pt;text-align: center;">
+                            《绿皮书》
+                        </div>
+                        <div style="font-size: larger;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            《绿皮书》在我看来，是很温暖治愈的一部电影。
+
+人生并不是一帆风顺，即使你的生活已经达到了一定的高度，但是对于你想弥补的遗憾，也许至今都毫无办法。
+
+可是人生的旅途总会给你带来一些不一样的惊喜，填补你所无法挽回的遗憾，就像影片中，唐遇见托尼一样，他们更像是彼此的救赎。
+
+这部电影起初最吸引我的是影片开头:“灵感来源于真实故事”这句话。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 实时时间显示 -->
+        <div class="time" id="time">
+            <script type="text/javascript">
+                function time(){
+                    var vWeek,vWeek_s,vDay;
+                    vWeek = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
+                    var date =  new Date();
+                    var year = date.getFullYear();
+                    var month = date.getMonth() + 1;
+                    month=month<10?'0'+month:month;
+                    var day = date.getDate();
+                    day=day<10?'0'+day:day;
+                    var hours = date.getHours();
+                    hours=hours<10?'0'+hours:hours;
+                    var minutes = date.getMinutes();
+                    minutes=minutes<10?'0'+minutes:minutes;
+                    var seconds = date.getSeconds();
+                    seconds=seconds<10?'0'+seconds:seconds;
+                    vWeek_s = date.getDay();
+                    document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" 
+                    + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
+                };
+                setInterval("time()",1000);
+            </script>
+        </div>
+        <div class="copyright">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; copyright&copy;2023-2024 all right reserved
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 制作人学号：2110683
+        </div>
+        <!-- 侧边CD -->
+        <div class="right-slider">
+            <img src="img/CD.png" id="CD" class="CD" onclick="timeout ? stopAnim() : startAnim();swap_music()"  />
+            <audio src="最佳幸运-CHEN.mp3" id="music" autoplay></audio>
+        </div>
+        <script type="text/javascript">
+            function swap_music() {
+                var oAudio = document.getElementById('music');
+                var pic = document.getElementById('CD');
+                if (oAudio.paused) {
+                    oAudio.play();
+                    pic.play();
+                }
+                else {
+                    oAudio.pause();
+                    pic.pause();
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var timeout, rotate = 0;
+            function startAnim() {
+                timeout = setInterval(function () {
+                    var img = document.getElementById("CD");
+                    var rotateStyle = "rotate(" + rotate + "deg)";
+                    img.style.transform = rotateStyle;
+                    img.style["-moz-transform"] = rotateStyle;
+                    img.style["-webkit-transform"] = rotateStyle;
+                    img.style["-o-transform"] = rotateStyle;
+                    img.style["-ms-transform"] = rotateStyle;
+    
+                    rotate += 6;
+                    if (rotate > 360) {
+                        rotate = 0;
+                    }
+                }, 30);
+            }
+            function stopAnim() {
+                clearInterval(timeout);
+                timeout = null;
+            }
+            startAnim();
+        </script>
+    </div>
+</body>
+</html>
